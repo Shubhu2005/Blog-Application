@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+
+body.light {
+  background: #eef2f3;
+  color: #000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body.dark {
+  background: #0f172a;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  max-width: 650px;
+  margin: auto;
+  padding: 20px;
+  transition: 0.3s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar {
+  background: #1e88e5;
   color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.theme-btn {
+  padding: 8px 15px;
+  background: #fff;
+  color: #000;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+body.dark .card {
+  background: #1e293b;
+  color: #fff;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.form-card {
+  border-left: 6px solid #4caf50;
+}
+
+.blog-card {
+  border-left: 6px solid #2196f3;
+}
+
+/* ✅ Inputs */
+.input,
+.textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 10px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn-primary {
+  background: #4caf50;
+}
+
+.btn-secondary {
+  background: #757575;
+}
+
+.btn-edit {
+  background: #1976d2;
+}
+
+.btn-delete {
+  background: #e53935;
+}
+
+.list-title {
+  margin-top: 30px;
+}
+
+.date-text {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.empty-text {
+  text-align: center;
+  opacity: 0.7;
+  margin-top: 20px;
 }
