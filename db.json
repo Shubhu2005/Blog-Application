@@ -1,0 +1,16 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "First Blog",
+      "body": "This is my first blog using JSON Server!",
+      "date": "2025-01-01"
+    },
+    {
+      "id": 2,
+      "title": "Second Blog",
+      "body": "Vite + TypeScript is awesome!",
+      "date": "2025-01-05"
+    }
+  ]
+}
